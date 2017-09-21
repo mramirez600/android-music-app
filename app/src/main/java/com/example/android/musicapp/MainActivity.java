@@ -5,8 +5,15 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
+
+import es.dmoral.toasty.Toasty;
 
 public class MainActivity extends AppCompatActivity {
+
+    ImageButton play;
+    ImageButton prev;
+    ImageButton next;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,6 +21,15 @@ public class MainActivity extends AppCompatActivity {
 
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
+
+        play = (ImageButton) findViewById(R.id.play);
+        play.setOnClickListener(submitButtonOnClickListener);
+
+        prev = (ImageButton) findViewById(R.id.prev);
+        prev.setOnClickListener(prevnOnClickListener);
+
+        next = (ImageButton) findViewById(R.id.next);
+        next.setOnClickListener(nextnOnClickListener);
 
         // Find the View that shows the numbers category
         ImageButton info = (ImageButton) findViewById(R.id.info);
@@ -24,10 +40,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link NumbersActivity}
-                Intent numbersIntent = new Intent(MainActivity.this, InfoActivity.class);
+                Intent infoIntent = new Intent(MainActivity.this, InfoActivity.class);
 
                 // Start the new activity
-                startActivity(numbersIntent);
+                startActivity(infoIntent);
             }
         });
 
@@ -40,10 +56,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link NumbersActivity}
-                Intent numbersIntent = new Intent(MainActivity.this, ShareActivity.class);
+                Intent shareIntent = new Intent(MainActivity.this, ShareActivity.class);
 
                 // Start the new activity
-                startActivity(numbersIntent);
+                startActivity(shareIntent);
             }
         });
 
@@ -55,12 +71,44 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link NumbersActivity}
-                Intent numbersIntent = new Intent(MainActivity.this, PurchaseActivity.class);
+                Intent purchaseIntent = new Intent(MainActivity.this, PurchaseActivity.class);
 
                 // Start the new activity
-                startActivity(numbersIntent);
+                startActivity(purchaseIntent);
             }
         });
 
     }
+
+
+
+     final View.OnClickListener prevnOnClickListener = new View.OnClickListener() {
+        public void onClick(final View v){
+
+            Toasty.info(MainActivity.this, "PREV", Toast.LENGTH_SHORT, true).show();
+                //Toasty.success(MainActivity.this, "PREVIOUS", Toast.LENGTH_SHORT, true).show();
+
+
+        }
+    };
+
+    final View.OnClickListener nextnOnClickListener = new View.OnClickListener() {
+        public void onClick(final View v){
+
+            Toasty.info(MainActivity.this, "NEXT", Toast.LENGTH_SHORT, true).show();
+            //Toasty.success(MainActivity.this, "NEXT", Toast.LENGTH_SHORT, true).show();
+
+
+        }
+    };
+
+    final View.OnClickListener submitButtonOnClickListener = new View.OnClickListener() {
+        public void onClick(final View v){
+
+
+            Toasty.success(MainActivity.this, "PLAY/PAUSE", Toast.LENGTH_SHORT, true).show();
+
+
+        }
+    };
 }

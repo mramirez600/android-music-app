@@ -10,49 +10,55 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_gravity="center"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/mobbdeeptheinfamous1995"
-            android:layout_marginTop="15dp"
+            android:layout_height="200dp"
             android:layout_marginBottom="15dp"
-            />
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/mobbdeeptheinfamous1995" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MOBB DEEP"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:text="MOBB DEEP" />
 
         <RatingBar
             android:id="@+id/rating"
-            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:isIndicator="true"
             android:numStars="5"
-            android:stepSize="0.1"
-            android:isIndicator="true" />
-    </LinearLayout>
+            android:stepSize="0.1" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:text="@string/share"
+            android:textSize="16sp" />
+    </LinearLayout>
 
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/floatingActionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_marginBottom="25dp"
         android:layout_marginEnd="25dp"
         android:layout_marginRight="25dp"
         android:clickable="true"
         app:fabSize="mini"
-        app:srcCompat="@android:drawable/ic_menu_send"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        app:srcCompat="@android:drawable/ic_menu_send" />
 </RelativeLayout>

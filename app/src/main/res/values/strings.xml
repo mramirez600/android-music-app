@@ -1,5 +1,15 @@
 <resources>
     <string name="app_name">Music App</string>
+    <string name="artist">Mobb Deep</string>
+    <string name="track">Track: Shook Ones Pt. II</string>
+    <string name="album">Album: The Infamous...</string>
     <string name="title_activity_info">InfoActivity</string>
     <string name="title_activity_share">ShareActivity</string>
+    <string name="share">Intent on this screen is to rate and share the current album/track with your contacts. Current option is via email but texting and adding to social media can be implemented</string>
+    <string name="wiki">https://en.wikipedia.org/wiki/Mobb_Deep</string>
+    <string name="bio">Mobb Deep was an American hip hop duo from the Queensbridge Houses in New York City.[1] The group consisted of Havoc and Prodigy, and were a hardcore East Coast Hip-Hop group.[2] They were known for their dark, hardcore delivery as exemplified in "Shook Ones (Part II)."[3] Mobb Deep became one of the most successful rap duos in hip hop, having sold over three million records.[2] Two of their notable albums were The Infamous (1995) and Hell on Earth (1996).[4][5] The group briefly disbanded in 2012 but later reunited in 2013.[6] Prodigy died on June 20, 2017.[7]</string>
+    <string name="googlepay">https://developer.android.com/google/play/developer-api.html</string>
+    <string name="apiDetails">The API allows you to manage your apps catalog of in-app products and subscriptions. In addition, with the Subscriptions and In-App Purchases API you can quickly retrieve the details of any purchase using a standard GET request. In the request you supply information about the purchase — app package name, purchase or subscription ID, and the purchase token. The server responds with a JSON object describing the associated purchase details, order status, developer payload, and other information.</string>
+    <string name="info">The intent here is to provide additional details for the artist and a link to the wikipedia page if the user wishes to find out more about the artist</string>
+    <string name="purchase">The intent here is to have the user purchase either the album or the track from the Google Play store using the Google Play API</string>
 </resources>
