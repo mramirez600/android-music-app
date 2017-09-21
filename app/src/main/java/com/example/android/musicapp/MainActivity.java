@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         next = (ImageButton) findViewById(R.id.next);
         next.setOnClickListener(nextnOnClickListener);
 
-        // Find the View that shows the numbers category
+        // Find the View that shows the info category
         ImageButton info = (ImageButton) findViewById(R.id.info);
 
         // Set a click listener on that View
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the numbers category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
+                // Create a new intent to open the {@link infoActivity}
                 Intent infoIntent = new Intent(MainActivity.this, InfoActivity.class);
 
                 // Start the new activity
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Find the View that shows the numbers category
+        // Find the View that shows the share category
         ImageButton share = (ImageButton) findViewById(R.id.share);
 
         // Set a click listener on that View
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the numbers category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
+                // Create a new intent to open the {@link shareActivity}
                 Intent shareIntent = new Intent(MainActivity.this, ShareActivity.class);
 
                 // Start the new activity
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the numbers category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
+                // Create a new intent to open the {@link purchaseActivity}
                 Intent purchaseIntent = new Intent(MainActivity.this, PurchaseActivity.class);
 
                 // Start the new activity
@@ -81,19 +81,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-     final View.OnClickListener prevnOnClickListener = new View.OnClickListener() {
-        public void onClick(final View v){
+    final View.OnClickListener prevnOnClickListener = new View.OnClickListener() {
+        public void onClick(final View v) {
 
             Toasty.info(MainActivity.this, "PREV", Toast.LENGTH_SHORT, true).show();
-                //Toasty.success(MainActivity.this, "PREVIOUS", Toast.LENGTH_SHORT, true).show();
+            //Toasty.success(MainActivity.this, "PREVIOUS", Toast.LENGTH_SHORT, true).show();
 
 
         }
     };
 
     final View.OnClickListener nextnOnClickListener = new View.OnClickListener() {
-        public void onClick(final View v){
+        public void onClick(final View v) {
 
             Toasty.info(MainActivity.this, "NEXT", Toast.LENGTH_SHORT, true).show();
             //Toasty.success(MainActivity.this, "NEXT", Toast.LENGTH_SHORT, true).show();
@@ -103,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
     };
 
     final View.OnClickListener submitButtonOnClickListener = new View.OnClickListener() {
-        public void onClick(final View v){
+        public void onClick(final View v) {
 
 
             Toasty.success(MainActivity.this, "PLAY/PAUSE", Toast.LENGTH_SHORT, true).show();
