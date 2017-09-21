@@ -5,6 +5,7 @@
     <string name="album">Album: The Infamous...</string>
     <string name="title_activity_info">InfoActivity</string>
     <string name="title_activity_share">ShareActivity</string>
+    <string name="main">Main screen shows current track playing with album cover. Provides access to intents along with play functionality.</string>
     <string name="share">Intent on this screen is to rate and share the current album/track with your contacts. Current option is via email but texting and adding to social media can be implemented</string>
     <string name="wiki">https://en.wikipedia.org/wiki/Mobb_Deep</string>
     <string name="bio">Mobb Deep was an American hip hop duo from the Queensbridge Houses in New York City.[1] The group consisted of Havoc and Prodigy, and were a hardcore East Coast Hip-Hop group.[2] They were known for their dark, hardcore delivery as exemplified in "Shook Ones (Part II)."[3] Mobb Deep became one of the most successful rap duos in hip hop, having sold over three million records.[2] Two of their notable albums were The Infamous (1995) and Hell on Earth (1996).[4][5] The group briefly disbanded in 2012 but later reunited in 2013.[6] Prodigy died on June 20, 2017.[7]</string>

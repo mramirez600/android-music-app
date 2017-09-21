@@ -85,7 +85,6 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(final View v) {
 
             Toasty.info(MainActivity.this, "PREV", Toast.LENGTH_SHORT, true).show();
-            //Toasty.success(MainActivity.this, "PREVIOUS", Toast.LENGTH_SHORT, true).show();
 
 
         }
@@ -95,7 +94,6 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(final View v) {
 
             Toasty.info(MainActivity.this, "NEXT", Toast.LENGTH_SHORT, true).show();
-            //Toasty.success(MainActivity.this, "NEXT", Toast.LENGTH_SHORT, true).show();
 
 
         }
